@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* header */
+header {
+    width: 93%;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-header {
+    width: 700px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.more-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 205px;
+    height: 70px;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+}
+
+
+.srch-icon:hover {
+    cursor: pointer;
+    color: rgb(243, 79, 63);
+}
+
+.menu li a {
+    color: #6d6a6a;
+    position: relative;
+    transition: border-bottom 0.3s ease;
+}
+
+.menu li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #6d6a6a;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    z-index: -1;
+    opacity: 0;
+}
+
+.menuItem {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+    top: 71px;
+    padding-top: 2rem;
+    position: absolute;
+}
+
+.cart0 {
+    display: flex;
+}
+
+.menu li a:hover::before {
+    width: 100%;
+    opacity: 1;
+}
+
+.visible-menu {
+    display: none;
+}
+
+.home:hover .visible-menu {
+    display: block;
+}
+
+.pages-menu {
+    display: none;
+}
+
+.pages:hover .pages-menu {
+    display: block;
+}
+
+.portfoilo:hover .portfoilo-menu {
+    display: block;
+}
+
+.portfoilo-menu {
+    display: none;
+}
+
+.blog:hover .blog-menu {
+    display: block;
+}
+
+.blog-menu {
+    display: none;
+}
+
+.elements:hover .elements-menu {
+    display: block;
+}
+
+.elements-menu {
+    display: none;
+}
+
+.Layouts {
+    position: relative;
+}
+
+.Layouts::after {
+    content: " >";
+    position: absolute;
+    left: 120px;
+    top: 2px;
+}
+
+.Layouts:hover .layouts-menu {
+    display: block;
+}
+
+.layouts-menu {
+    display: none;
+}
+
+.menuItemone {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+    top: -50px;
+    left: 9rem;
+    padding-top: 2rem;
+    position: absolute;
+}
+
+.menuItemone1 {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+    top: 50px;
+    left: 5rem;
+    padding-top: 2rem;
+    position: absolute;
+}
+
+.menuItemrwo {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+    top: -50px;
+    left: 15rem;
+    padding-top: 2rem;
+    position: absolute;
+}
+
+.portfoilloo {
+    position: relative;
+}
+
+.portfoilloo::after {
+    content: " >";
+    position: absolute;
+    left: 110px;
+    top: 2px;
+}
+
+
+.post::before {
+    content: "> ";
+    position: absolute;
+    left: -15px;
+
+}
+
+.portfoillo-menu {
+    display: none;
+}
+
+.portfoilloo:hover .portfoillo-menu {
+    display: block;
+}
+
+.post-menu {
+    display: none;
+}
+
+.post:hover .post-menu {
+    display: block;
+}
+
+.clals-menu {
+    display: none;
+}
+
+.post:hover .post-menu {
+    display: block;
+}
+
+.classic-menu {
+    display: none;
+    position: absolute;
+    left: -125px;
+    top: 25px;
+    padding: 10px 20px;
+}
+
+.clsmenu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.classic:hover .classic-menu {
+    display: block;
+}
+
+.classic::after {
+    content: " < ";
+    margin-left: 10px;
+}
+
+.infograph:hover .info-menu {
+    display: block;
+}
+
+.info-menu {
+    position: absolute;
+    left: -125px;
+    padding: 10px 20px;
+    top: 55px;
+    display: none;
+}
+
+.infograph::after {
+    content: " < ";
+    margin-left: 10px;
+}
+
+.interactive::after {
+    content: " < ";
+    margin-left: 10px;
+}
+
+.interactive:hover .intro-menu {
+    display: block;
+}
+
+.intro-menu {
+    display: none;
+    position: absolute;
+    left: -125px;
+    padding: 10px 20px;
+    top: 95px;
+}
+
+.tyopragphy::after {
+    content: " < ";
+    margin-left: 10px;
+}
+
+.tyopragphy:hover .typo-menu {
+    display: block;
+}
+
+.typo-menu {
+    display: none;
+    position: absolute;
+    left: -125px;
+    padding: 10px 20px;
+    top: 115px;
+}
+
+.shop:hover .hidden-menu {
+    display: block;
+}
+
+.hidden-menu {
+    display: none;
+}
+
+.shop-menu {
+    position: absolute;
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    left: 290px;
+    top: 4rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.shop-menu-jun ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.shop-menu-jun li a {
+    color: #6d6a6a;
+    position: relative;
+    transition: border-bottom 0.3s ease;
+}
+
+.shop-menu-jun li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #6d6a6a;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    z-index: -1;
+    opacity: 0;
+}
+
+.shop-menu-jun li a:hover::before {
+    width: 100%;
+    opacity: 1;
+}
+
+.head-p {
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 15px 0;
+}
+/* header */
